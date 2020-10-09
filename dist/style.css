@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f4f4f4;
+  overflow-x: hidden;
+}
+
+.container{
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+}
+
+hr {
+  height: 5px;
+  border: none;
+  background-color: orange;
+}
+
+#home {
+  height: 100vh;
+  background: url('./img/south_africa_180917.jpg') center no-repeat;
+  background-size: 1100px;
+}
+
+#home .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+  background-color: #fff;
+  position: static;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+#home .row .logo img {
+  width: 260px;
+  margin-right: 5rem;
+}
+
+#home .row nav ul {
+  display: flex;
+}
+
+#home .row nav ul li a {
+  padding: 15px 20px;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+#home .row nav ul li a:hover {
+  background-color: rgb(255, 161, 20);
+  color: #fff;
+}
+
+#about {
+  margin: 40px 6rem 0px;
+  height: 40vh;
+}
+
+/* About Section */
+#about .about-row {
+  display: grid;
+  grid-template-columns: 3fr 1.8fr;
+  grid-gap: 20px;
+}
+
+h4 {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+#about p {
+  font-size: 16px;
+}
+
+#about .paragraph-1 {
+  margin: 8px 0;
+}
+
+#about .about-information {
+  /* background-color: #302d2d; */
+  background-color: rgb(231, 151, 31);
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 0px 15px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#about .about-information h3 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+#about .about-information p {
+  font-size: 16px;
+}
+
+#about .about-information p span {
+  margin-left: 4rem;
+  font-weight: 700;
+}
+
+#about .about-information img {
+  width: 46px;
+  margin: 3px;
+  padding: 5px 15px;
+  background-color: rgb(255, 210, 210);
+  border-radius: 15px;
+
+}
+
+#about .about-information .icons {
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.about-content {
+  display: flex;
+  background-color: #fff;
+  color: #000000;
+  padding: 20px 0px;
+}
+
+.about-content .about-left img {
+  width: 200px;
+  margin: 0 20px;
+}
+
+#flight {
+  margin: 2rem 6rem;
+}
+
+#flight .flight-row {
+  display: grid;
+  grid-template-columns: 2.5fr 2fr;
+  grid-gap: 2rem;
+}
+
+#flight .flight-row .plane img {
+  width: 380px;
+  margin-top: 15px;
+  margin-left: 5rem;
+}
+
+/* card */
+.flight-row .card {
+  margin: 10px auto;
+  background-color: #ffffff;
+  border-radius: 15PX;
+  width: 75%;
+
+}
+
+.flight-row .card .card-top {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.flight-row .card img {
+  width: 150px;
+}
+
+.flight-row .card .card-top h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.flight-row .card .card-middle p:first-child {
+  font-size: 23px;
+  margin-left: 2rem;
+  margin-bottom: 10px;
+}
+
+.flight-row .card .card-middle {
+  padding: 10px;
+}
+
+.flight-row .card .card-middle p:last-child {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.flight-row .card .card-middle .time {
+  padding: 0 35px;
+  margin: 0 5px;
+  font-size: 16px;
+}
+
+.flight-row .card .card-middle .place {
+  margin-left: 7rem;
+}
+
+.flight-row .card .card-bottom {
+  background-color: rgb(224, 188, 67);
+  border-radius: 0px 0px 15px 15px;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 20px;
+  font-size: 12px;
+}
+
+.flight-row .card .card-bottom .weight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flight-row .card .card-bottom .check-in {
+  align-items: center;
+  display: flex;
+}
+
+.flight-row .card .card-bottom img {
+  width: 30px;
+  margin-right: 5px;
+}
+
+.flight-row .card .card-bottom button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 15px;
+  background-color: rgb(133, 252, 97);
+  display: flex;
+  cursor: pointer;
+}
+
+.flight-row .card .card-bottom button img {
+  width: 16px;
+}
+
+
+.boxes {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.boxes span {
+  color: black;
+  font-size: 14px;
+}
+
+.boxes .box-1 {
+  height: 130px;
+  width: 140px;
+  background-color: rgb(117, 75, 75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+
+
+.boxes .box-2 {
+  height: 130px;
+  width: 140px;
+  background-color: rgb(71, 168, 71);
+  margin: 0 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.boxes .box-3 {
+  height: 130px;
+  width: 130px;
+  background-color: rgb(202, 188, 56);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.box-1:hover,
+.box-2:hover,
+.box-3:hover {
+  transform: scale(1.05);
+}
+
+.pay {
+  padding: 10px 0;
+}
+
+.pay img {
+  display: block;
+  margin: 20px auto;
+  padding: 8px 50px;
+  background-color: rgb(28, 204, 86);
+  border-radius: 15px;
+}
+
+#payment {
+  margin: 2rem 6rem;
+}
+
+#contact {
+  background-color: #fff;
+  padding: 2rem 7rem;
+
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+#contact img {
+  width: 90px;
+  margin-bottom: 5px;
+}
+
+#contact .pointer {
+  width: 30px;
+  margin-top: 15px;
+}
+
+.contact-information {
+  display: flex; 
+  justify-content: space-around; 
+  margin: 0 -7rem;
+  color: rgb(110, 219, 233);
+  font-weight: 700;
+  padding-bottom: 12px;
+}
+i{
+  color: #000000;
+}
+
+.btn{
+  height: 40px;
+  width: 40px;
+  background-color: rgb(224, 188, 67);
+  color: #ffffff;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  font-size: 22px;
+  text-align: center;
+  line-height: 1.9;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.btn i{
+  color: #ffffff;
+}
